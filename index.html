@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 QUIZ MANIA MADNESS 🔥</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="particles"></div>
+
+  <div class="container">
+    <div class="quiz-card">
+      <h1 class="title">🔥 QUIZ MANIA 🔥</h1>
+
+      <div id="welcome-screen">
+        <p class="question">Ready for the most INSANE quiz experience ever?</p>
+        <button class="btn" onclick="startQuiz()">🚀 START QUIZ 🚀</button>
+      </div>
+
+      <div id="quiz-screen" class="hidden">
+        <div class="progress-bar"><div class="progress" id="progress"></div></div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <h2 class="question" id="question"></h2>
+        <div class="options" id="options"></div>
+        <button class="btn" id="next-btn" onclick="nextQuestion()" style="display: none;">NEXT 🔥</button>
+      </div>
+
+      <div id="result-screen" class="hidden">
+        <h2 class="question">🎉 QUIZ COMPLETED! 🎉</h2>
+        <div class="score">Final Score: <span id="final-score">0</span></div>
+        <p id="result-message" class="question"></p>
+        <button class="btn" onclick="restartQuiz()">🔄 PLAY AGAIN 🔄</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
